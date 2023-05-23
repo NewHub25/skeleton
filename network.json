@@ -1,0 +1,28 @@
+{
+  "networks": [
+    {
+      "id": 1,
+      "network": {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/terry-ildefonso-chagua-84a7a8252/"
+      },
+      "colorStyle": "#0a66c2",
+      "fontawesomeClass": "fa-brands fa-linkedin"
+    },
+    {
+      "id": 2,
+      "network": { "name": "github", "url": "https://github.com/NewHub25" },
+      "colorStyle": "#151515",
+      "fontawesomeClass": "fa-brands fa-github"
+    },
+    {
+      "id": 3,
+      "network": {
+        "name": "twitter",
+        "url": "https://twitter.com/TerrySmart25"
+      },
+      "colorStyle": "#1d9bf0",
+      "fontawesomeClass": "fa-brands fa-square-twitter"
+    }
+  ]
+}

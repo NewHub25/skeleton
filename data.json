@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "profile": {
+        "name": "Augusto Constantino Guanyu Méndez",
+        "url": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "content": {
+        "text": "El elegante felino en cuestión es un cautivador gatito gris de incomparable belleza. Su pelaje suave y sedoso envuelve su cuerpo esbelto y ágil como una capa de misterio.",
+        "url": "https://images.pexels.com/photos/8117226/pexels-photo-8117226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    },
+    {
+      "id": 2,
+      "profile": {
+        "name": "Ju Qiu Soledad Villalobos",
+        "url": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "content": {
+        "text": "Te presento a dos adorables perritos bebés que derrochan ternura y alegría. El primero de ellos es un travieso cachorrito negro, cuyo pelaje reluciente refleja la elegancia y la profundidad de la noche estrellada.",
+        "url": "https://images.pexels.com/photos/6291572/pexels-photo-6291572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    },
+    {
+      "id": 3,
+      "profile": {
+        "name": "Nohemi Emma Lucía Martín",
+        "url": "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      "content": {
+        "text": "El primer par de perritos, vestidos con suaves abrigos blancos, son una combinación perfecta de ternura y travesura. Sus pequeñas colas se agitan con entusiasmo mientras exploran los adornos navideños que rodean la gorra.",
+        "url": "https://images.pexels.com/photos/3361746/pexels-photo-3361746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+    }
+  ]
+}
