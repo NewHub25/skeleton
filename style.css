@@ -144,6 +144,3 @@ footer section.network ul li {
 footer section.network ul li:hover {
   transform: translateY(-10px) scale(1.1);
 }
-.hidden{
-  opacity: 0;
-}
