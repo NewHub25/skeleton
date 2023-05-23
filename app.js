@@ -60,5 +60,6 @@ async function downloadToFooter() {
   }
   document.querySelector(".footer-container .network ul").innerHTML =
     inner_html_footer;
+  document.querySelector(".hidden").classList.remove("hidden");
 }
 downloadToHTML();
