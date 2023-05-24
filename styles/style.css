@@ -119,6 +119,10 @@ footer {
   font-family: "Karla", sans-serif;
   padding: 30px;
   background-color: var(--dark);
+  /* position: absolute;
+  right: 0;left: 0;bottom: 0; */
+  /* width: 90vw; */
+  /* width: 100dvw; */
 }
 footer section.author {
   text-align: center;
@@ -139,8 +143,11 @@ footer section.network ul li i {
   color: var(--color);
 }
 footer section.network ul li {
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 footer section.network ul li:hover {
   transform: translateY(-10px) scale(1.1);
+}
+.hidden{
+  opacity: 0;
 }

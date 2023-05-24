@@ -7,9 +7,32 @@ async function downloadImage(url) {
   console.log(`Se descargó imagen Nº${img_order}`);
   return URL.createObjectURL(blob);
 }
+async function downloadToFooterUL() {
+  console.log("Comenzando descarga de datos de pie de página");
+  const data = await fetch("./jsons/network.json");
+  const json = await data.json();
+  console.log("Se descargaron los últimos datos");
+  let inner_html_footer_UL = "";
+  for (let i = 0; i < json.networks.length; i++) {
+    const {
+      network: { name, url },
+      colorStyle,
+      fontawesomeClass,
+    } = json.networks[i];
+    inner_html_footer_UL += `
+<li>
+  <a href="${url}" title="${name.toUpperCase()}" target="_blank">
+    <i class="${fontawesomeClass}" style="--color: ${colorStyle}"></i>
+  </a>
+</li>
+    `;
+  }
+  document.querySelector(".footer-container .network ul").innerHTML =
+    inner_html_footer_UL;
+}
 async function downloadToHTML() {
   console.log("Comenzando descarga de datos principal");
-  const data = await fetch("./data.json");
+  const data = await fetch("./jsons/data.json");
   const json = await data.json();
   console.log("Se descargaron correctamente los datos");
   let inner_html_main = "";
@@ -34,32 +57,8 @@ async function downloadToHTML() {
     `;
   }
   document.querySelector(".container").innerHTML = inner_html_main;
-  downloadToFooter();
+  downloadToFooterUL();
   console.log("Se inyectó nuevas estructuras HTML");
-}
-
-async function downloadToFooter() {
-  console.log("Comenzando descarga de datos de pie de página");
-  const data = await fetch("./network.json");
-  const json = await data.json();
-  console.log("Se descargaron los últimos datos");
-  let inner_html_footer = "";
-  for (let i = 0; i < json.networks.length; i++) {
-    const {
-      network: { name, url },
-      colorStyle,
-      fontawesomeClass,
-    } = json.networks[i];
-    inner_html_footer += `
-<li>
-  <a href="${url}" title="${name.toUpperCase()}" target="_blank">
-    <i class="${fontawesomeClass}" style="--color: ${colorStyle}"></i>
-  </a>
-</li>
-    `;
-  }
-  document.querySelector(".footer-container .network ul").innerHTML =
-    inner_html_footer;
-  document.querySelector(".footer-container").classList.add("fadeIn");
+  document.querySelector(".footer-container").classList.remove("hidden");
 }
 downloadToHTML();
